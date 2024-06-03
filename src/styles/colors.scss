@@ -1,0 +1,78 @@
+$theme-colors: (
+  'primary': #ffd366,
+  'secondary': #383a41,
+  'info': #f0f0f0,
+  'warning': #f1c342,
+  'light': #b0b3bd,
+  // 'danger': #be3f98,
+  // 'success': #C3EAFE,
+  'dark': #222426,
+);
+
+$color-primary: #ffd366;
+$color-warning: #f1c342;
+$color-white: #fff;
+$color-light: #b0b3bd;
+$color-black: #000;
+$color-dark: #222426;
+$color-dark-2: #292b32;
+
+.text-white-2 {
+  color: #ffffffde;
+}
+
+.text-white-3 {
+  color: #ffffff99;
+}
+
+.bg-navbar {
+  background-color: $color-black;
+}
+
+.bg-black {
+  background-color: $color-dark;
+}
+
+.bg-color-2 {
+  background: linear-gradient(180deg, #383a41 0%, #1b1b20 100%), #ffffff;
+}
+
+.bg-color-3 {
+  background: linear-gradient(180deg, #ffd366 0%, #ffbf20 100%);
+}
+
+.bg-color-4 {
+  background-color: #616161;
+}
+
+.bg-color-5 {
+  background-color: #282a33;
+}
+
+.box-shadow-1 {
+  box-shadow: inset 0px -10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btn-color {
+  background-color: #ffbf20;
+  background: linear-gradient(180deg, #ffd366 0%, #ffbf20 100%);
+  color: #000;
+
+  &:focus,
+  &.active,
+  &:hover {
+    background: linear-gradient(180deg, #ffbf20 0%, #ffd366 100%);
+    color: #000;
+  }
+}
+
+.dropdown-container {
+  .dropdown-item {
+    color: $color-light;
+    font-size: 14px;
+  }
+  .dropdown-item.active,
+  .dropdown-item:active {
+    background-color: $color-primary;
+  }
+}

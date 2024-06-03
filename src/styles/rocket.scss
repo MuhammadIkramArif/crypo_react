@@ -1,0 +1,146 @@
+.clouds {
+  display: block;
+  -webkit-animation: verticalScroll 1s infinite ease-in;
+  -moz-animation: verticalScroll 1s infinite ease-in;
+  animation: verticalScroll 1s infinite ease-in;
+}
+
+#rocket {
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-animation: takeOff 0.3s infinite ease-in;
+  animation: takeOff 0.3s infinite ease-in;
+}
+
+.flame-outer {
+  -webkit-animation: outerFlame 0.5s infinite linear;
+  -moz-animation: outerFlame 0.5s infinite linear;
+  animation: outerFlame 0.5s infinite linear;
+}
+
+@-webkit-keyframes verticalScroll {
+  0% {
+    transform: translateY(-400px);
+  }
+
+  100% {
+    transform: translateY(400px);
+  }
+}
+@-moz-keyframes verticalScroll {
+  0% {
+    transform: translateY(-400px);
+  }
+
+  100% {
+    transform: translateY(400px);
+  }
+}
+@keyframes verticalScroll {
+  0% {
+    transform: translateY(-400px);
+  }
+
+  100% {
+    transform: translateY(400px);
+  }
+}
+
+@-webkit-keyframes takeOff {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1) translateY(-20px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+@keyframes takeOff {
+  0% {
+    transform: scale(0.6) translateY(0);
+  }
+  50% {
+    transform: scale(0.6) translateY(-20px);
+  }
+  100% {
+    transform: scale(0.6) translateY(0);
+  }
+}
+
+@-webkit-keyframes outerFlame {
+  0% {
+    fill: #000;
+  }
+  25% {
+    fill: #545454;
+  }
+
+  50% {
+    fill: #000;
+  }
+
+  75% {
+    fill: #545454;
+  }
+
+  100% {
+    fill: #000;
+  }
+}
+@-moz-keyframes outerFlame {
+  0% {
+    fill: #000;
+  }
+  25% {
+    fill: #545454;
+  }
+
+  50% {
+    fill: #000;
+  }
+
+  75% {
+    fill: #545454;
+  }
+
+  100% {
+    fill: #000;
+  }
+}
+@keyframes outerFlame {
+  0% {
+    fill: #000;
+  }
+  25% {
+    fill: #545454;
+  }
+
+  50% {
+    fill: #000;
+  }
+
+  75% {
+    fill: #545454;
+  }
+
+  100% {
+    fill: #000;
+  }
+}
+
+@-webkit-keyframes innerFlame {
+  0% {
+    fill: orange;
+  }
+  33% {
+    fill: yellow;
+  }
+  66% {
+    fill: orange;
+  }
+  100% {
+    fill: red;
+  }
+}
